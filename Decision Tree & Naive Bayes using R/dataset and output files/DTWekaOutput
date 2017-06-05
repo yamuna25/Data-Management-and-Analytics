@@ -1,0 +1,166 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     HR_comma_sep
+Instances:    14999
+Attributes:   10
+              satisfaction_level
+              last_evaluation
+              number_project
+              average_montly_hours
+              time_spend_company
+              Work_accident
+              promotion_last_5years
+              sales
+              salary
+              left
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+satisfaction_level <= 0.46
+|   satisfaction_level <= 0.11: Yes (888.0)
+|   satisfaction_level > 0.11
+|   |   number_project <= 2
+|   |   |   last_evaluation <= 0.57
+|   |   |   |   last_evaluation <= 0.44: No (38.0)
+|   |   |   |   last_evaluation > 0.44
+|   |   |   |   |   average_montly_hours <= 162
+|   |   |   |   |   |   average_montly_hours <= 126
+|   |   |   |   |   |   |   average_montly_hours <= 125: No (16.0)
+|   |   |   |   |   |   |   average_montly_hours > 125: Yes (10.0)
+|   |   |   |   |   |   average_montly_hours > 126
+|   |   |   |   |   |   |   satisfaction_level <= 0.36
+|   |   |   |   |   |   |   |   satisfaction_level <= 0.31: No (7.0)
+|   |   |   |   |   |   |   |   satisfaction_level > 0.31: Yes (95.0/2.0)
+|   |   |   |   |   |   |   satisfaction_level > 0.36: Yes (1417.0/4.0)
+|   |   |   |   |   average_montly_hours > 162
+|   |   |   |   |   |   average_montly_hours <= 240: No (19.0)
+|   |   |   |   |   |   average_montly_hours > 240
+|   |   |   |   |   |   |   average_montly_hours <= 258: Yes (3.0)
+|   |   |   |   |   |   |   average_montly_hours > 258: No (3.0)
+|   |   |   last_evaluation > 0.57
+|   |   |   |   time_spend_company <= 3: No (74.0)
+|   |   |   |   time_spend_company > 3
+|   |   |   |   |   average_montly_hours <= 279: No (51.0/4.0)
+|   |   |   |   |   average_montly_hours > 279: Yes (5.0/1.0)
+|   |   number_project > 2
+|   |   |   average_montly_hours <= 131: No (192.0)
+|   |   |   average_montly_hours > 131
+|   |   |   |   average_montly_hours <= 141
+|   |   |   |   |   number_project <= 3: No (27.0)
+|   |   |   |   |   number_project > 3
+|   |   |   |   |   |   Work_accident <= 0
+|   |   |   |   |   |   |   salary = low
+|   |   |   |   |   |   |   |   average_montly_hours <= 136: Yes (14.0/1.0)
+|   |   |   |   |   |   |   |   average_montly_hours > 136
+|   |   |   |   |   |   |   |   |   time_spend_company <= 3: Yes (6.0/2.0)
+|   |   |   |   |   |   |   |   |   time_spend_company > 3: No (9.0/1.0)
+|   |   |   |   |   |   |   salary = medium
+|   |   |   |   |   |   |   |   time_spend_company <= 5: No (11.0)
+|   |   |   |   |   |   |   |   time_spend_company > 5: Yes (4.0/1.0)
+|   |   |   |   |   |   |   salary = high: No (9.0/1.0)
+|   |   |   |   |   |   Work_accident > 0: No (7.0)
+|   |   |   |   average_montly_hours > 141
+|   |   |   |   |   time_spend_company <= 5
+|   |   |   |   |   |   average_montly_hours <= 275
+|   |   |   |   |   |   |   last_evaluation <= 0.44: No (82.0)
+|   |   |   |   |   |   |   last_evaluation > 0.44
+|   |   |   |   |   |   |   |   last_evaluation <= 0.46
+|   |   |   |   |   |   |   |   |   average_montly_hours <= 226
+|   |   |   |   |   |   |   |   |   |   average_montly_hours <= 208: No (5.0)
+|   |   |   |   |   |   |   |   |   |   average_montly_hours > 208: Yes (9.0)
+|   |   |   |   |   |   |   |   |   average_montly_hours > 226: No (11.0)
+|   |   |   |   |   |   |   |   last_evaluation > 0.46
+|   |   |   |   |   |   |   |   |   last_evaluation <= 0.98
+|   |   |   |   |   |   |   |   |   |   number_project <= 6: No (809.0/48.0)
+|   |   |   |   |   |   |   |   |   |   number_project > 6: Yes (5.0)
+|   |   |   |   |   |   |   |   |   last_evaluation > 0.98
+|   |   |   |   |   |   |   |   |   |   number_project <= 4
+|   |   |   |   |   |   |   |   |   |   |   average_montly_hours <= 190: No (6.0)
+|   |   |   |   |   |   |   |   |   |   |   average_montly_hours > 190: Yes (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   number_project > 4: No (13.0)
+|   |   |   |   |   |   average_montly_hours > 275
+|   |   |   |   |   |   |   average_montly_hours <= 289
+|   |   |   |   |   |   |   |   number_project <= 6: No (69.0/9.0)
+|   |   |   |   |   |   |   |   number_project > 6: Yes (4.0)
+|   |   |   |   |   |   |   average_montly_hours > 289: Yes (11.0)
+|   |   |   |   |   time_spend_company > 5: No (245.0)
+satisfaction_level > 0.46
+|   time_spend_company <= 4
+|   |   average_montly_hours <= 276: No (8764.0/116.0)
+|   |   average_montly_hours > 276
+|   |   |   average_montly_hours <= 290
+|   |   |   |   last_evaluation <= 0.97: No (57.0)
+|   |   |   |   last_evaluation > 0.97: Yes (4.0/1.0)
+|   |   |   average_montly_hours > 290: Yes (9.0)
+|   time_spend_company > 4
+|   |   last_evaluation <= 0.8: No (751.0/30.0)
+|   |   last_evaluation > 0.8
+|   |   |   time_spend_company <= 6
+|   |   |   |   average_montly_hours <= 215
+|   |   |   |   |   number_project <= 3
+|   |   |   |   |   |   time_spend_company <= 5
+|   |   |   |   |   |   |   average_montly_hours <= 142: No (10.0)
+|   |   |   |   |   |   |   average_montly_hours > 142
+|   |   |   |   |   |   |   |   salary = low: Yes (13.0/1.0)
+|   |   |   |   |   |   |   |   salary = medium
+|   |   |   |   |   |   |   |   |   satisfaction_level <= 0.85: No (4.0)
+|   |   |   |   |   |   |   |   |   satisfaction_level > 0.85: Yes (3.0)
+|   |   |   |   |   |   |   |   salary = high: No (1.0)
+|   |   |   |   |   |   time_spend_company > 5: No (16.0)
+|   |   |   |   |   number_project > 3: No (72.0/2.0)
+|   |   |   |   average_montly_hours > 215
+|   |   |   |   |   number_project <= 3
+|   |   |   |   |   |   salary = low
+|   |   |   |   |   |   |   satisfaction_level <= 0.63: Yes (6.0)
+|   |   |   |   |   |   |   satisfaction_level > 0.63: No (9.0/1.0)
+|   |   |   |   |   |   salary = medium: No (21.0)
+|   |   |   |   |   |   salary = high: No (3.0)
+|   |   |   |   |   number_project > 3
+|   |   |   |   |   |   satisfaction_level <= 0.7: No (28.0/4.0)
+|   |   |   |   |   |   satisfaction_level > 0.7
+|   |   |   |   |   |   |   satisfaction_level <= 0.91: Yes (851.0/17.0)
+|   |   |   |   |   |   |   satisfaction_level > 0.91
+|   |   |   |   |   |   |   |   satisfaction_level <= 0.92: Yes (21.0/1.0)
+|   |   |   |   |   |   |   |   satisfaction_level > 0.92: No (5.0)
+|   |   |   time_spend_company > 6: No (168.0)
+
+Number of Leaves  : 	56
+
+Size of the tree : 	108
+
+
+Time taken to build model: 0.14 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        4381               97.3556 %
+Incorrectly Classified Instances       119                2.6444 %
+Kappa statistic                          0.9257
+Mean absolute error                      0.0413
+Root mean squared error                  0.1585
+Relative absolute error                 11.3626 %
+Root relative squared error             37.0969 %
+Total Number of Instances             4500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.908    0.006    0.981      0.908    0.943      0.927    0.969     0.944     Yes
+                 0.994    0.092    0.971      0.994    0.983      0.927    0.969     0.982     No
+Weighted Avg.    0.974    0.072    0.974      0.974    0.973      0.927    0.969     0.973     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  982  100 |    a = Yes
+   19 3399 |    b = No
+

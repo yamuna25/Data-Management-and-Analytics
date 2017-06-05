@@ -1,0 +1,1347 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="94ddbe25-9841-4a67-bf10-d6ddbaff2173" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>YamunaAssignment4</ID>
+  <Name>YamunaAssignment4</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="ac01dfb9-84eb-4fc6-884c-700b7c44b0cd">
+      <ID>City</ID>
+      <Name>City</Name>
+      <DimensionID>City</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e97a0c60-1e0b-4d47-9e2c-7a352dfc7660">
+          <AttributeID>City Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="89b7283a-a3c5-491e-8fca-90b72bde799a">
+      <ID>Customer</ID>
+      <Name>Customer</Name>
+      <DimensionID>Customer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c084f340-8de5-4749-bcdd-ff3f32297e53">
+          <AttributeID>Customer Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="be5f4e37-7062-4fad-a4be-78633ed0f138">
+      <ID>Supplier</ID>
+      <Name>Supplier</Name>
+      <DimensionID>Supplier</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="45dbdd98-e1f4-4352-8590-4b6460b947fb">
+          <AttributeID>Supplier Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="62c6e94c-32c5-466d-bd24-ca25cce2f2cd">
+      <ID>Transaction Type</ID>
+      <Name>Transaction Type</Name>
+      <DimensionID>Transaction Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7d9f08ed-2450-4fed-9b66-730464d65343">
+          <AttributeID>Transaction Type Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6a68d421-ad4a-4673-afbd-60d93a152acd">
+      <ID>Payment Method</ID>
+      <Name>Payment Method</Name>
+      <DimensionID>Payment Method</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d81e7f4d-7c0f-44b3-9744-648e22668311">
+          <AttributeID>Payment Method Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="895c3c6b-2a45-4e8a-9536-85c2af025f09">
+      <ID>Order</ID>
+      <Name>Order</Name>
+      <DimensionID>Order</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="30a24aef-cdfd-4b7d-8e4f-64c20724ab0a">
+          <AttributeID>Order Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="82637a03-4aa2-4d74-a6dc-42a61b15a87a">
+          <AttributeID>Picked Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a70ae2fb-7d8c-4553-b7ef-1f098e732d01">
+          <AttributeID>Salesperson Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fea685c3-830f-4b15-867a-e44acc52b490">
+          <AttributeID>Customer Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="66e1464f-fb32-4ecf-b044-542198b72470">
+          <AttributeID>City Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2dfa4c4b-0443-4d9f-ba48-f0849a879ecd">
+          <AttributeID>Order Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b1d85680-456a-440f-bbed-245d875d0798">
+          <AttributeID>Stock Item Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8f6b3d5b-cfcf-48ca-aab7-7054157d826e">
+          <AttributeID>Picker Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3b5f014f-2211-40d7-ac0d-c23342a66478">
+      <ID>Picked Date</ID>
+      <Name>Picked Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b34cf4d1-82d4-44ad-9bb0-7026abb2f0a6">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2dfee394-2c51-4c7d-ac8e-5f6a9c3f81f1">
+      <ID>Salesperson</ID>
+      <Name>Salesperson</Name>
+      <DimensionID>Employee</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8dda4e88-f456-4fc4-a6a6-eb5520444c54">
+          <AttributeID>Employee Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c57cfd5d-5098-4215-848d-e927e7fd077d">
+      <ID>Order Date</ID>
+      <Name>Order Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fd98cb6a-d83f-46a7-ab32-a657339cab69">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5ba9e0ee-e968-4ba7-9fac-e471afa287b6">
+      <ID>Stock Item</ID>
+      <Name>Stock Item</Name>
+      <DimensionID>Stock Item</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="916d201e-62d2-4384-b49d-20cda322a24c">
+          <AttributeID>Stock Item Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="23252aa7-7b0e-4783-b93b-6386214ce993">
+      <ID>Picker</ID>
+      <Name>Picker</Name>
+      <DimensionID>Employee</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c3c024e8-c633-4aef-be07-2f8c7a0e0cc7">
+          <AttributeID>Employee Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e9b99c04-8331-4dee-a04e-eb62c84996d3">
+      <ID>Purchase</ID>
+      <Name>Purchase</Name>
+      <DimensionID>Purchase</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f617ad4c-5763-4629-9536-6fe8a7835316">
+          <AttributeID>Purchase Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0c4e0ee9-08af-4937-b631-a4ecdc97a820">
+          <AttributeID>Supplier Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="359fc291-e35f-4b5a-a9a2-814926c2d8e3">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2b843ab8-310f-4b48-8d96-d7426e729a8e">
+          <AttributeID>Stock Item Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c96b102a-195a-4503-b2aa-6835916406a5">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="78fb751f-5149-4a42-8abe-c3f90596e404">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1eb13458-923b-467e-98d7-aa3c5d5da825">
+      <ID>City Staging</ID>
+      <Name>City Staging</Name>
+      <DimensionID>City Staging</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ea79aa3a-3e50-415c-b425-01f90afe6a81">
+          <AttributeID>City Staging Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="04fbfb80-5c95-4cff-9e8c-59163a205ef3">
+      <ID>Customer Staging</ID>
+      <Name>Customer Staging</Name>
+      <DimensionID>Customer Staging</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e2e753c1-092d-4311-962b-782cb1ad19bf">
+          <AttributeID>Customer Staging Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4469f99a-3ff0-4ec4-9ff1-63558d2dd936">
+      <ID>Payment Method Staging</ID>
+      <Name>Payment Method Staging</Name>
+      <DimensionID>Payment Method Staging</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1585f5fc-7396-41a4-ab5e-4474e511a5b9">
+          <AttributeID>Payment Method Staging Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f3d1a967-d8cc-4962-a2e2-132cc26d66d8">
+      <ID>Supplier Staging</ID>
+      <Name>Supplier Staging</Name>
+      <DimensionID>Supplier Staging</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="30b20173-8041-45c3-9661-c37b8b37fc0f">
+          <AttributeID>Supplier Staging Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="fe1f5e1d-42a6-43c7-86a3-9f1f80dceabf">
+      <ID>Transaction Type Staging</ID>
+      <Name>Transaction Type Staging</Name>
+      <DimensionID>Transaction Type Staging</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="dac1786c-ddb6-436e-925e-a840c82bf875">
+          <AttributeID>Transaction Type Staging Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="ce78bbb0-c4be-47a8-8b23-3be08409debc">
+      <ID>City</ID>
+      <Name>City</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="32e13b34-38bf-46d2-b58b-398fdfd02964">
+          <ID>WWI City ID</ID>
+          <Name>WWI City ID</Name>
+          <Source dwd:design-time-name="9527579a-733e-4ef3-aac9-ba9fca6c4dc3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cb2df5a6-c881-4947-9ef6-a9ca65590eb8">
+              <TableID>Dimension_City</TableID>
+              <ColumnID>WWI_x0020_City_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3525d45e-b9a7-4c22-b337-ab0d71aa679d">
+          <ID>Latest Recorded Population</ID>
+          <Name>Latest Recorded Population</Name>
+          <Source dwd:design-time-name="c52d3726-8e88-480a-a144-24c4b1b86af1">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="61fb4be2-d3f4-44b6-b334-5a8f21d5343a">
+              <TableID>Dimension_City</TableID>
+              <ColumnID>Latest_x0020_Recorded_x0020_Population</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0deab679-865a-4c82-a1f0-0d65fa8541eb">
+          <ID>Lineage Key</ID>
+          <Name>Lineage Key</Name>
+          <Source dwd:design-time-name="7aa45733-9e87-4d56-912a-774db3d2dd52">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fb54b5f2-10b7-416c-ad59-b024651cd109">
+              <TableID>Dimension_City</TableID>
+              <ColumnID>Lineage_x0020_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f1d31d50-b0ac-451f-9d8c-0cf6464cfe1f">
+          <ID>City Count</ID>
+          <Name>City Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="bc4dbb37-c601-4d85-967e-fc11a232acc6">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="78398d97-a37d-42b8-9c52-ba3a6cb7c1ff">
+              <TableID>Dimension_City</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="b3790c6e-29f4-4dea-bb8d-e18b97d04ae0">
+          <CubeDimensionID>City</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a23ee4f9-3f00-4747-916d-3d5ca6601e9a">
+              <AttributeID>City Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3ae4163a-2522-48bf-8f1f-31acf3cf8697">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d79edd87-c47e-4536-a47d-040301934701">
+                    <TableID>Dimension_City</TableID>
+                    <ColumnID>City_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="e6a180ae-44d1-492c-8c4b-6e24f54da6b9">
+      <ID>Customer</ID>
+      <Name>Customer</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="bd236d17-1b73-4d13-bccd-a5764c1aff97">
+          <ID>WWI Customer ID</ID>
+          <Name>WWI Customer ID</Name>
+          <Source dwd:design-time-name="511b3dd0-280b-4df0-95b0-3f25f6ea8586">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2b54e9f4-9740-4387-a83e-d9913f0af8a9">
+              <TableID>Dimension_Customer</TableID>
+              <ColumnID>WWI_x0020_Customer_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c0153742-f8bb-4922-8a6d-98123cf723be">
+          <ID>Lineage Key - Customer</ID>
+          <Name>Lineage Key - Customer</Name>
+          <Source dwd:design-time-name="de2c02c5-0876-4ab4-85b7-55a9f987ec0a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="87cbec0b-61d5-4e36-b7d6-71cd554f05cb">
+              <TableID>Dimension_Customer</TableID>
+              <ColumnID>Lineage_x0020_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d450eef6-1f87-4271-8831-ccffa8c38ca5">
+          <ID>Customer Count</ID>
+          <Name>Customer Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5606ed17-286c-4a27-8dc0-4b41210f7d72">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="d9e3b117-42a6-4f29-ac8f-61392d306f7f">
+              <TableID>Dimension_Customer</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="aea71536-372e-4c27-bfe6-3093df51f170">
+          <CubeDimensionID>Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9d0efc2f-9623-492d-8303-49e6f5671c10">
+              <AttributeID>Customer Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b0fcf206-897d-4430-83e2-ad0f3922aced">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7cb8a4f0-b5d6-4a35-83c7-d70a801f04b5">
+                    <TableID>Dimension_Customer</TableID>
+                    <ColumnID>Customer_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="851709a6-10ed-41a7-a98d-8005a91f20cf">
+      <ID>Supplier</ID>
+      <Name>Supplier</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a0159143-aa6c-479f-b53e-2a0d7f9a98db">
+          <ID>WWI Supplier ID</ID>
+          <Name>WWI Supplier ID</Name>
+          <Source dwd:design-time-name="01c2220a-6296-4cb9-9e91-5c74f2ca2030">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7e53181a-397a-44ae-841c-cad2d3de5b0b">
+              <TableID>Dimension_Supplier</TableID>
+              <ColumnID>WWI_x0020_Supplier_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3f3a8926-169e-47a2-adcd-a2c3a613099a">
+          <ID>Payment Days</ID>
+          <Name>Payment Days</Name>
+          <Source dwd:design-time-name="61e61d9b-5e73-4e4a-b382-be54d4a4c140">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b067702f-008f-4610-811c-0f3a810b9f44">
+              <TableID>Dimension_Supplier</TableID>
+              <ColumnID>Payment_x0020_Days</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d3acfcde-d53b-44df-9dfc-d9252b1d805a">
+          <ID>Lineage Key - Supplier</ID>
+          <Name>Lineage Key - Supplier</Name>
+          <Source dwd:design-time-name="eb2af84c-97ec-46ce-a831-da224ea38ca6">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="85cc8e1a-581f-4103-be5f-9b8a9ccb051d">
+              <TableID>Dimension_Supplier</TableID>
+              <ColumnID>Lineage_x0020_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d5a60dc3-ffcc-4f4a-b3ce-07e1f4557f59">
+          <ID>Supplier Count</ID>
+          <Name>Supplier Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b5a35bf6-cc8f-4dbb-9492-e55b667db550">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="500fc412-df4c-4e82-b55d-cd52d3e03d8e">
+              <TableID>Dimension_Supplier</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="0cf76253-b9bb-447c-a96b-4453680bfd26">
+          <CubeDimensionID>Supplier</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="42397e4b-4be5-4dbb-a253-06c579f69d8c">
+              <AttributeID>Supplier Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="57eebd54-2fb6-4282-b77b-dbca2a290bf4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c32b5a04-1f98-4c36-82a5-299a5038a245">
+                    <TableID>Dimension_Supplier</TableID>
+                    <ColumnID>Supplier_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="6cd1591e-f074-4b91-b8df-32bbf0e1e4bf">
+      <ID>Transaction Type</ID>
+      <Name>Transaction Type</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1114e1f9-d962-4a07-85e6-eb434569b4b9">
+          <ID>WWI Transaction Type ID</ID>
+          <Name>WWI Transaction Type ID</Name>
+          <Source dwd:design-time-name="8e5435cc-c181-41e9-ba64-03953ff306a1">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="db10ef72-4d23-4c29-ad9d-9189454903f9">
+              <TableID>Dimension_Transaction_x0020_Type</TableID>
+              <ColumnID>WWI_x0020_Transaction_x0020_Type_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c28df265-1020-425f-956e-66a6552ae755">
+          <ID>Lineage Key - Transaction Type</ID>
+          <Name>Lineage Key - Transaction Type</Name>
+          <Source dwd:design-time-name="ddf1889e-cb3e-497f-9efd-fe829dd2cbe6">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ebd3dee6-ce09-4112-8bca-6e08b92dcda1">
+              <TableID>Dimension_Transaction_x0020_Type</TableID>
+              <ColumnID>Lineage_x0020_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4983d8f1-1981-4ac6-81c0-c0ab9b72ebf4">
+          <ID>Transaction Type Count</ID>
+          <Name>Transaction Type Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b73f8205-3898-4a92-800b-ad427e568dce">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="7d963e51-279e-4625-af6b-0ed5f26365be">
+              <TableID>Dimension_Transaction_x0020_Type</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="81a4d8f4-4776-4bb3-91e8-5747f5bfdcb4">
+          <CubeDimensionID>Transaction Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c61dd60f-6768-47e1-9363-7787142a5417">
+              <AttributeID>Transaction Type Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4e0a5dae-3c7e-4fd6-9045-1c6c02d3ac88">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="58e3f057-0a1a-4f9e-8e31-15d9e8933e47">
+                    <TableID>Dimension_Transaction_x0020_Type</TableID>
+                    <ColumnID>Transaction_x0020_Type_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="767fc659-8cd6-4288-8190-0bf55d1d2a6b">
+      <ID>Payment Method</ID>
+      <Name>Payment Method</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="2a5cc4a3-1edb-402e-ad2b-7c397fa0be7a">
+          <ID>WWI Payment Method ID</ID>
+          <Name>WWI Payment Method ID</Name>
+          <Source dwd:design-time-name="90253188-1242-474b-97df-811e87275f85">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9067c1c0-743c-4947-931b-838d9451e2b3">
+              <TableID>Dimension_Payment_x0020_Method</TableID>
+              <ColumnID>WWI_x0020_Payment_x0020_Method_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2249eaeb-40ca-40b4-857c-2b89e6676e6d">
+          <ID>Lineage Key - Payment Method</ID>
+          <Name>Lineage Key - Payment Method</Name>
+          <Source dwd:design-time-name="96156c5e-6a84-4de3-ad38-249d21e55852">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="22ea604f-35b2-45f2-a83f-19422d703908">
+              <TableID>Dimension_Payment_x0020_Method</TableID>
+              <ColumnID>Lineage_x0020_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0e63e801-21ca-4c5f-a8b4-4b9dbc948592">
+          <ID>Payment Method Count</ID>
+          <Name>Payment Method Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="58269077-4a13-4732-ba78-ccb6c7d9708e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="99ec9651-b89a-42b1-86a7-04b31fb27587">
+              <TableID>Dimension_Payment_x0020_Method</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="34c6cb34-f89a-49be-a3e5-7dd715bb9bb7">
+          <CubeDimensionID>Payment Method</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="836266b2-012a-4c6c-b737-f7d34969c9ce">
+              <AttributeID>Payment Method Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9bec7a16-213f-48f0-a7ff-ed84361eaf53">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1c5ce761-750e-4764-9444-bfe22566169a">
+                    <TableID>Dimension_Payment_x0020_Method</TableID>
+                    <ColumnID>Payment_x0020_Method_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="9d3cd96a-d0ae-4399-81c0-3c6b864917df">
+      <ID>Order</ID>
+      <Name>Order</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="053e0289-46a8-45b7-8b06-57fc3c1f642a">
+          <ID>WWI Order ID</ID>
+          <Name>WWI Order ID</Name>
+          <Source dwd:design-time-name="4bb77398-66ca-4f2a-8d22-b21722976b0d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d1790d38-aeaa-48fc-954e-48f04dad6549">
+              <TableID>Fact_Order</TableID>
+              <ColumnID>WWI_x0020_Order_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3718a0ec-167b-4e4e-8e7a-ed2aefbc5022">
+          <ID>WWI Backorder ID</ID>
+          <Name>WWI Backorder ID</Name>
+          <Source dwd:design-time-name="cfb0d3c2-63c0-48ce-8bb4-96f072cbcd27">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ddba5757-0715-49e3-8c6d-781200d1e238">
+              <TableID>Fact_Order</TableID>
+              <ColumnID>WWI_x0020_Backorder_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3cc45475-845d-4533-935b-0fd4faefc11c">
+          <ID>Quantity</ID>
+          <Name>Quantity</Name>
+          <Source dwd:design-time-name="5abbed00-052e-4408-a74d-7bac7434fe13">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fa440947-272a-4af4-956d-cce1cb543324">
+              <TableID>Fact_Order</TableID>
+              <ColumnID>Quantity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="dafa8557-e321-46e9-b906-10490ab50eae">
+          <ID>Unit Price</ID>
+          <Name>Unit Price</Name>
+          <Source dwd:design-time-name="f4405f4a-a6fa-4c18-8568-0597c917f164">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="47eda69a-b79c-4909-8bfe-35a560262cbe">
+              <TableID>Fact_Order</TableID>
+              <ColumnID>Unit_x0020_Price</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="13ec6eeb-285f-4bd7-aa53-228e037cf2bf">
+          <ID>Tax Rate</ID>
+          <Name>Tax Rate</Name>
+          <Source dwd:design-time-name="928f541f-3c9e-4e4c-b57c-9e2440d71c99">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="adb8d640-67a9-460a-a6a4-ee7d521837a4">
+              <TableID>Fact_Order</TableID>
+              <ColumnID>Tax_x0020_Rate</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="767180f6-e392-4f3a-af88-1ab35b574267">
+          <ID>Total Excluding Tax</ID>
+          <Name>Total Excluding Tax</Name>
+          <Source dwd:design-time-name="3a98d671-4694-4a3d-ad66-ce229d42a30a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="49a70b77-8f30-4f6a-9e61-26a412285a66">
+              <TableID>Fact_Order</TableID>
+              <ColumnID>Total_x0020_Excluding_x0020_Tax</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="58e34749-9fa7-410a-81dd-121bd7f596ae">
+          <ID>Tax Amount</ID>
+          <Name>Tax Amount</Name>
+          <Source dwd:design-time-name="6b87d7db-f158-46ef-900e-c1b3bde27fa7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="eb95f946-db26-4744-8ccd-e618a0aa4660">
+              <TableID>Fact_Order</TableID>
+              <ColumnID>Tax_x0020_Amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f1b26141-e1c5-44fc-ac58-df699f7c84f9">
+          <ID>Total Including Tax</ID>
+          <Name>Total Including Tax</Name>
+          <Source dwd:design-time-name="aaff929e-de78-489d-9993-a7a37844fc9c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9a40e0f5-b659-4ecf-bfa1-d2480831ac58">
+              <TableID>Fact_Order</TableID>
+              <ColumnID>Total_x0020_Including_x0020_Tax</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b3a92434-4dba-4314-8e69-1d18baf094b3">
+          <ID>Lineage Key - Order</ID>
+          <Name>Lineage Key - Order</Name>
+          <Source dwd:design-time-name="db35a7b5-4300-4a82-8cbb-3d1e85c3368b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="30f76ea9-eab0-4fd4-a12a-55b795d9251e">
+              <TableID>Fact_Order</TableID>
+              <ColumnID>Lineage_x0020_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e91b345d-ee50-4691-ba8b-d89ae9147826">
+          <ID>Order Count</ID>
+          <Name>Order Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f27d7126-0845-41aa-92b0-9769867b8d9d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="09c7df4b-0cd5-4679-af39-f8cbaae9a58f">
+              <TableID>Fact_Order</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="73686441-3a15-4315-ac70-b4c36c1beeb1">
+          <CubeDimensionID>Order</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c147b593-9c6b-4ac9-8b09-62e78abf27cc">
+              <AttributeID>Order Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c5e51bee-1ea4-41ce-935d-2d2d7acd3840">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ebd7c64d-5880-47bf-8aa9-d01e791e8388">
+                    <TableID>Fact_Order</TableID>
+                    <ColumnID>Order_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bfe67f66-cfdc-4ea2-a0bd-12dbc5e1306d">
+          <CubeDimensionID>Picked Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1998e0a0-ad60-4b35-b67b-70dd5e76c5b5">
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="60fac81b-330a-4847-ba2f-a5bf12b6d575">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fbde3ea5-26e8-4fbd-8852-50a19766c8db">
+                    <TableID>Fact_Order</TableID>
+                    <ColumnID>Picked_x0020_Date_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7d598bf9-4d0b-4e23-b95c-07b870dd3205">
+          <CubeDimensionID>Salesperson</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9e0dae52-082b-49c1-a5a4-cedee2cb8a0d">
+              <AttributeID>Employee Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d2d7b545-7700-4997-8191-4ba6cc7c9acb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="66ab57c5-4470-4efa-9d5b-d7a6be746646">
+                    <TableID>Fact_Order</TableID>
+                    <ColumnID>Salesperson_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9e4e5e40-5e7d-49db-8e5a-93d80f815f03">
+          <CubeDimensionID>Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b441e7fc-bf94-4bd4-82ed-deb959540c76">
+              <AttributeID>Customer Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="87671301-7cce-448c-a894-58ad3ef2b572">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="98285585-1d56-421a-ab38-c55d88e5f484">
+                    <TableID>Fact_Order</TableID>
+                    <ColumnID>Customer_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="23629e26-10c3-4bf3-af80-aad9bcb3e269">
+          <CubeDimensionID>City</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="84a79c32-1336-4bb1-96bc-b709e0fb6690">
+              <AttributeID>City Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7f48c28a-633b-45e0-8a47-303de550c585">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="86071aee-dab5-4d3e-bc53-3399ee2e232d">
+                    <TableID>Fact_Order</TableID>
+                    <ColumnID>City_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="79d9ee9e-918e-4fc1-8428-a5691af02b71">
+          <CubeDimensionID>Order Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2a5cbdc9-ef5a-4436-bff6-1c7c6e18be05">
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e15b8834-b3c1-47f0-be36-fc0858938bd1">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f4d8bd2d-3aba-41c8-a39a-35d534eee496">
+                    <TableID>Fact_Order</TableID>
+                    <ColumnID>Order_x0020_Date_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e2a1c427-2426-4e37-abef-22994b88806b">
+          <CubeDimensionID>Stock Item</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4d176a5e-2d21-456e-9cdf-d7a5fa9bb15b">
+              <AttributeID>Stock Item Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="45c53d8f-e830-4f4b-9d75-15426920fb06">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1aab5649-875d-4fe3-9d9d-de6354a70136">
+                    <TableID>Fact_Order</TableID>
+                    <ColumnID>Stock_x0020_Item_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b2c33723-008d-4609-bfad-1d34b0cb1c38">
+          <CubeDimensionID>Picker</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7285ee6d-daa3-4ee2-a49c-4ae817d9122f">
+              <AttributeID>Employee Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f1b55fe5-7e2a-4feb-8783-1c1f8e39aa9a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="513086cf-2e60-4da4-b3e3-c66faaa405f3">
+                    <TableID>Fact_Order</TableID>
+                    <ColumnID>Picker_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="4e66acd6-9dd0-4197-901e-59f5adf69e0e">
+      <ID>Purchase</ID>
+      <Name>Purchase</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="fad55e28-de77-478c-99e8-19044056279d">
+          <ID>WWI Purchase Order ID</ID>
+          <Name>WWI Purchase Order ID</Name>
+          <Source dwd:design-time-name="efbd22d1-59eb-4c94-b3e2-7ccf39a8b96c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8bd0d427-cfc1-4d29-a393-3866c232edb6">
+              <TableID>Fact_Purchase</TableID>
+              <ColumnID>WWI_x0020_Purchase_x0020_Order_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="41070ef3-4730-43bd-a099-97ddb471b661">
+          <ID>Ordered Outers</ID>
+          <Name>Ordered Outers</Name>
+          <Source dwd:design-time-name="07745bee-c62a-48d9-a514-be0b01a190bc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="67554139-d3f9-4471-b327-b66e72d19446">
+              <TableID>Fact_Purchase</TableID>
+              <ColumnID>Ordered_x0020_Outers</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b9cb7fda-9eca-43e4-9444-592265843f4f">
+          <ID>Ordered Quantity</ID>
+          <Name>Ordered Quantity</Name>
+          <Source dwd:design-time-name="7360d21d-1934-44a3-901f-efba3e445f61">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="52e91095-7288-4382-9b69-abf7d493f23e">
+              <TableID>Fact_Purchase</TableID>
+              <ColumnID>Ordered_x0020_Quantity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3fd5a54c-fac3-4386-a1b2-ddc4cbbebbb7">
+          <ID>Received Outers</ID>
+          <Name>Received Outers</Name>
+          <Source dwd:design-time-name="2053d33a-775b-4044-b3ce-2cac30990c16">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4dffe7ed-0742-4b8c-b9b6-72b39f63439a">
+              <TableID>Fact_Purchase</TableID>
+              <ColumnID>Received_x0020_Outers</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8aaf1272-1281-4347-8ee1-780c5f7821fb">
+          <ID>Lineage Key - Purchase</ID>
+          <Name>Lineage Key - Purchase</Name>
+          <Source dwd:design-time-name="e654516d-cdf7-48ec-9c6d-d92fc749ffb7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0ab7030a-8428-4534-8e10-50c8ff28a5de">
+              <TableID>Fact_Purchase</TableID>
+              <ColumnID>Lineage_x0020_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0c94c72d-99bd-4ea0-8a7a-ca70ab6977ca">
+          <ID>Purchase Count</ID>
+          <Name>Purchase Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="3f3da08b-84ae-4562-a550-babd4d52ed99">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="4b87faa8-f0de-4f58-a4c3-46d037a6321a">
+              <TableID>Fact_Purchase</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="b565a53f-14e4-43ea-adb7-0f9a59151a41">
+          <CubeDimensionID>Purchase</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ba6030e6-3ca6-4c18-ba32-0137754bd366">
+              <AttributeID>Purchase Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e051fd8b-1a75-4d69-8c30-69400a2e4fda">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1df7e238-d8a8-4bcf-8866-e49bd19e7694">
+                    <TableID>Fact_Purchase</TableID>
+                    <ColumnID>Purchase_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f14c86ab-1fad-4846-87e2-173a21162e2a">
+          <CubeDimensionID>Supplier</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1ff8fcdb-6d94-431b-a087-647e9a3e288a">
+              <AttributeID>Supplier Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9cea692e-605c-40dc-bbc4-4c117853d888">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4fde6346-f6eb-4dd3-a2f0-f2288c84e475">
+                    <TableID>Fact_Purchase</TableID>
+                    <ColumnID>Supplier_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fa933dc3-dcbc-4e94-aba1-c4f0d62f0fd3">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="88195c7e-ea80-4c15-890d-3d5b119ff7e5">
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8e22bd72-6298-483b-b84e-6a871353758f">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3662ce8d-21cb-4d62-afe4-075bf5c2fcbc">
+                    <TableID>Fact_Purchase</TableID>
+                    <ColumnID>Date_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dd920501-9e2b-4a00-8de0-dc0739877477">
+          <CubeDimensionID>Stock Item</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ebd46b16-5840-4ef9-8e88-9b204b72e232">
+              <AttributeID>Stock Item Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5dc94266-7f92-44c6-903b-4b6b27b6797f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f195ccfe-db1b-4884-8ae7-fe215de33978">
+                    <TableID>Fact_Purchase</TableID>
+                    <ColumnID>Stock_x0020_Item_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="ecc49cf3-b123-4231-9841-aba48771749b">
+      <ID>City Staging</ID>
+      <Name>City Staging</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b0022a9e-988a-40cc-b407-7888316053c3">
+          <ID>WWI City ID - City Staging</ID>
+          <Name>WWI City ID - City Staging</Name>
+          <Source dwd:design-time-name="90ea7ba3-4e1b-48a0-92be-0d98a9306785">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a8b8700c-6d81-4647-9a5a-b645b5a82153">
+              <TableID>Integration_City_Staging</TableID>
+              <ColumnID>WWI_x0020_City_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="07276361-8f7f-4fca-bdd4-8597dfacab78">
+          <ID>Latest Recorded Population - City Staging</ID>
+          <Name>Latest Recorded Population - City Staging</Name>
+          <Source dwd:design-time-name="c2046b2d-394c-4449-ab31-fa70e9b290f5">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1e51577e-e1d7-4243-8dc9-76c2a81348ea">
+              <TableID>Integration_City_Staging</TableID>
+              <ColumnID>Latest_x0020_Recorded_x0020_Population</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c1ad3036-18f5-423f-8fca-0d1644a3be0a">
+          <ID>City Staging Count</ID>
+          <Name>City Staging Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="fa3575dd-bb96-49b9-81f2-137fde4a4707">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="198164d5-3c26-4139-bc43-0444133c6abe">
+              <TableID>Integration_City_Staging</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="54d6ba33-3168-4bd0-93e6-a526ad48620e">
+          <CubeDimensionID>City Staging</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8be68851-5b70-4d77-b64f-037294b18453">
+              <AttributeID>City Staging Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="87fd8fa5-d7a6-4b9b-b691-ab0788494b42">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="665aae28-8a04-45fc-a033-3bc0be901eaa">
+                    <TableID>Integration_City_Staging</TableID>
+                    <ColumnID>City_x0020_Staging_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="14ee1fb2-f92a-4ab2-8810-beec223a0471">
+      <ID>Customer Staging</ID>
+      <Name>Customer Staging</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="781d9d44-9bc3-45b0-a654-36f498398190">
+          <ID>WWI Customer ID - Customer Staging</ID>
+          <Name>WWI Customer ID - Customer Staging</Name>
+          <Source dwd:design-time-name="5eaeb619-387a-4b62-a7bd-b1db33e074c2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b980d7ea-fa14-4fe8-8b8a-dfdbae7accb7">
+              <TableID>Integration_Customer_Staging</TableID>
+              <ColumnID>WWI_x0020_Customer_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0bc7f1e8-29fc-44a5-a2a9-3a7530181fe3">
+          <ID>Customer Staging Count</ID>
+          <Name>Customer Staging Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="47515874-009b-4a7f-b443-2b8f7621b63a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="7cca3c20-5e9a-4761-9ec6-073f05946344">
+              <TableID>Integration_Customer_Staging</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="f074e371-6c22-4311-8e7d-12408d89b592">
+          <CubeDimensionID>Customer Staging</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1d689962-76e2-4d5d-9e8f-536d30cb543c">
+              <AttributeID>Customer Staging Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4e14c1da-3491-4a0d-ad38-f279fbcadb82">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="69dba848-ab7d-4d57-8ade-3cfd08f95afd">
+                    <TableID>Integration_Customer_Staging</TableID>
+                    <ColumnID>Customer_x0020_Staging_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="e8f11f86-8ba2-468e-8d58-a2c966187242">
+      <ID>Payment Method Staging</ID>
+      <Name>Payment Method Staging</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="99626b11-6cfe-4da1-9952-39f1566ba1bc">
+          <ID>WWI Payment Method ID - Payment Method Staging</ID>
+          <Name>WWI Payment Method ID - Payment Method Staging</Name>
+          <Source dwd:design-time-name="43b2b100-fdd1-4a94-a794-e40e1b690baf">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="56e2ed3d-690a-423e-8407-f57b0792c971">
+              <TableID>Integration_PaymentMethod_Staging</TableID>
+              <ColumnID>WWI_x0020_Payment_x0020_Method_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4df32ca2-607d-4a73-b7a9-37142dd7c514">
+          <ID>Payment Method Staging Count</ID>
+          <Name>Payment Method Staging Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d5132372-7737-45a9-a41c-53a467882656">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="38ab62e5-357a-43d7-b9fe-8d07c42e5f4c">
+              <TableID>Integration_PaymentMethod_Staging</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="fe697fdf-abc8-42bf-9123-aa5151c529be">
+          <CubeDimensionID>Payment Method Staging</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="71c03a36-ed2d-4a03-87b9-3936c3c5832f">
+              <AttributeID>Payment Method Staging Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="31f2bea4-3e48-4252-8a65-7e2ee93ac67d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="34c26ab8-d3b1-42d5-9ee0-b49f022fe3d7">
+                    <TableID>Integration_PaymentMethod_Staging</TableID>
+                    <ColumnID>Payment_x0020_Method_x0020_Staging_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="fe03f7e9-6b12-40d6-a220-4c73711f3fdc">
+      <ID>Supplier Staging</ID>
+      <Name>Supplier Staging</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="06cc3632-b180-4973-8f83-5615eda39c85">
+          <ID>WWI Supplier ID - Supplier Staging</ID>
+          <Name>WWI Supplier ID - Supplier Staging</Name>
+          <Source dwd:design-time-name="4fe3aa1d-f458-4a4e-91e7-1f6d65463d4d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="074f2a62-2161-4548-89bf-a80644bd4121">
+              <TableID>Integration_Supplier_Staging</TableID>
+              <ColumnID>WWI_x0020_Supplier_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="723211d1-be39-40ac-96a2-c470716116a9">
+          <ID>Payment Days - Supplier Staging</ID>
+          <Name>Payment Days - Supplier Staging</Name>
+          <Source dwd:design-time-name="441732ba-1a46-42d1-97b4-0c3e780cb600">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bbf23328-e3c0-40b2-84b3-18051fef2a2f">
+              <TableID>Integration_Supplier_Staging</TableID>
+              <ColumnID>Payment_x0020_Days</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e00f06c7-34d0-47c5-94b4-c082161d9149">
+          <ID>Supplier Staging Count</ID>
+          <Name>Supplier Staging Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="0b4547ec-51c5-4fb1-ab44-c70242150d1d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="ebdb4923-fd0b-44a8-8d92-c8162e55f2ec">
+              <TableID>Integration_Supplier_Staging</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="9675f8ab-11ff-43e6-8f1a-11c51341d393">
+          <CubeDimensionID>Supplier Staging</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="838be7fd-c3ef-460f-9f5a-5ced94d4121e">
+              <AttributeID>Supplier Staging Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="91df70de-98a0-4c80-80e1-d4addfc22478">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e37b32c5-c84f-475d-b242-813f8578dd9d">
+                    <TableID>Integration_Supplier_Staging</TableID>
+                    <ColumnID>Supplier_x0020_Staging_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="847d7696-d4a6-48b0-b1bb-51e4e901fa7b">
+      <ID>Transaction Type Staging</ID>
+      <Name>Transaction Type Staging</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="48529182-3c8c-4849-aa51-90763795cc97">
+          <ID>WWI Transaction Type ID - Transaction Type Staging</ID>
+          <Name>WWI Transaction Type ID - Transaction Type Staging</Name>
+          <Source dwd:design-time-name="395c97c0-cf57-47b8-9a12-23a25273bee9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="362b4de6-bb57-4d18-b717-e429886bba4e">
+              <TableID>Integration_TransactionType_Staging</TableID>
+              <ColumnID>WWI_x0020_Transaction_x0020_Type_x0020_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cc877900-a687-4332-9967-230f7a341e4b">
+          <ID>Transaction Type Staging Count</ID>
+          <Name>Transaction Type Staging Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c35592d0-ed92-48f9-80c9-b7ddf212f40d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f3b52207-e9f8-4e0f-878c-415d96f4060a">
+              <TableID>Integration_TransactionType_Staging</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="eae99d88-1e93-4bf9-9b51-339c9d2ec2e1">
+          <CubeDimensionID>Transaction Type Staging</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1e1e22e1-cba3-433c-8679-8415b39a2e76">
+              <AttributeID>Transaction Type Staging Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cbd1ceca-969a-4478-81d2-76ad7cf35d0e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b777c27f-3a03-4044-9eda-b49909a20186">
+                    <TableID>Integration_TransactionType_Staging</TableID>
+                    <ColumnID>Transaction_x0020_Type_x0020_Staging_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="8ce7cfb1-eccc-44aa-a2b2-4ea044b495e4">
+    <DataSourceViewID>Wide World Importers DW</DataSourceViewID>
+  </Source>
+</Cube>

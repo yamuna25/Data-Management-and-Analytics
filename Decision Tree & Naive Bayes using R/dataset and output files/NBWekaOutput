@@ -1,0 +1,119 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     HR_comma_sep
+Instances:    14999
+Attributes:   10
+              satisfaction_level
+              last_evaluation
+              number_project
+              average_montly_hours
+              time_spend_company
+              Work_accident
+              promotion_last_5years
+              sales
+              salary
+              left
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                           Class
+Attribute                    Yes       No
+                          (0.24)   (0.76)
+==========================================
+satisfaction_level
+  mean                     0.4401   0.6668
+  std. dev.                0.2639   0.2171
+  weight sum                 3571    11428
+  precision                  0.01     0.01
+
+last_evaluation
+  mean                     0.7181   0.7155
+  std. dev.                0.1976    0.162
+  weight sum                 3571    11428
+  precision                  0.01     0.01
+
+number_project
+  mean                     3.8555   3.7867
+  std. dev.                1.8179   0.9798
+  weight sum                 3571    11428
+  precision                     1        1
+
+average_montly_hours
+  mean                   207.4192 199.0602
+  std. dev.               61.1943  45.6807
+  weight sum                 3571    11428
+  precision                     1        1
+
+time_spend_company
+  mean                     4.0968   3.6916
+  std. dev.                0.7133   1.4704
+  weight sum                 3571    11428
+  precision                1.1429   1.1429
+
+Work_accident
+  mean                     0.0473    0.175
+  std. dev.                0.2123     0.38
+  weight sum                 3571    11428
+  precision                     1        1
+
+promotion_last_5years
+  mean                     0.0053   0.0263
+  std. dev.                0.1667   0.1667
+  weight sum                 3571    11428
+  precision                     1        1
+
+sales
+  sales                    1015.0   3127.0
+  accounting                205.0    564.0
+  hr                        216.0    525.0
+  technical                 698.0   2024.0
+  support                   556.0   1675.0
+  management                 92.0    540.0
+  IT                        274.0    955.0
+  product_mng               199.0    705.0
+  marketing                 204.0    656.0
+  RandD                     122.0    667.0
+  [total]                  3581.0  11438.0
+
+salary
+  low                      2173.0   5145.0
+  medium                   1318.0   5130.0
+  high                       83.0   1156.0
+  [total]                  3574.0  11431.0
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3830               85.1111 %
+Incorrectly Classified Instances       670               14.8889 %
+Kappa statistic                          0.5704
+Mean absolute error                      0.2236
+Root mean squared error                  0.3432
+Relative absolute error                 61.4989 %
+Root relative squared error             80.3138 %
+Total Number of Instances             4500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.616    0.074    0.724      0.616    0.665      0.574    0.867     0.704     Yes
+                 0.926    0.384    0.884      0.926    0.904      0.574    0.867     0.950     No
+Weighted Avg.    0.851    0.310    0.845      0.851    0.847      0.574    0.867     0.891     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  666  416 |    a = Yes
+  254 3164 |    b = No
+

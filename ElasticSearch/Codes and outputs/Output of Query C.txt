@@ -1,0 +1,126 @@
+runfile('C:/Users/Yamuna/Desktop/Data Management/Query C Python Code.py', wdir='C:/Users/Yamuna/Desktop/Data Management')
+
+490 documents found in trips table for Bus Name "1 SPRING GARDEN TO MUMFORD" 
+
+
+
+7873 documents found in trips table for route_id 1-114
+
+6530498-2012_08A-1208BRsu-Sunday-01
+6530555-2012_08A-1208BRsu-Sunday-01
+6525258-2012_08A-1208BRwd-Weekday-01
+6528116-2012_08A-1208BRsa-Saturday-01
+6530565-2012_08A-1208BRsu-Sunday-01
+
+
+289390 of documents found for matching stop and route ids mentioned above
+289390 of documents found for matching stop and route ids mentioned above
+289390 of documents found for matching stop and route ids mentioned above
+289390 of documents found for matching stop and route ids mentioned above
+289390 of documents found for matching stop and route ids mentioned above
+
+ Stop_id :
+
+6699
+6705
+6251
+6217
+6643
+8557
+6545
+6970
+8128
+8745
+6699
+6705
+6251
+6217
+6643
+8557
+6545
+6970
+8128
+8745
+7615
+8177
+8528
+6297
+6442
+6745
+8967
+6896
+6880
+6875
+6756
+8488
+6702
+6704
+6216
+8573
+8559
+8214
+8183
+8328
+6699
+6705
+6251
+6217
+6643
+8557
+6545
+6970
+8128
+8745
+
+ name_stop/Stop Name :
+
+flamingo dr after and opposite nightingale dr
+flamingo dr opposite dove st
+bedford hwy [inbound] in front of flamingo dr
+bedford hwy before sherbrooke dr
+fairview overpass before windsor st
+windsor st before almon st
+cunard st opposite hunter st
+inglis st [westbound] before tower rd
+beaverbank rd [inbound]after birch rd
+beaverbank rd opposite kinsac rd
+flamingo dr after and opposite nightingale dr
+flamingo dr opposite dove st
+bedford hwy [inbound] in front of flamingo dr
+bedford hwy before sherbrooke dr
+fairview overpass before windsor st
+windsor st before almon st
+cunard st opposite hunter st
+inglis st [westbound] before tower rd
+beaverbank rd [inbound]after birch rd
+beaverbank rd opposite kinsac rd
+dartmouth bridge terminal - bay 15
+robert burns dr [westbound] after primrose st
+windmill rd before ralston ave
+cobequid terminal bay 1
+cobequid rd before and opposite hillside ave
+glendale dr after rankin dr
+sackville terminal bay 2
+herring cove rd before civic address 896
+herring cove rd in front of civic address 822
+herring cove rd in front of civic address 470
+glendale dr before pinehill dr
+willet st after chadwick pl
+flamingo dr before meadowlark cr
+flamingo dr before skylark st
+bedford hwy in front of melody [msvu]
+windsor st opposite willow park
+windsor st before charles st
+robie st [southbound] before quinpool rd
+robie st [southbound] before pepperell st
+spring garden rd [eastbound] before carlton st
+flamingo dr after and opposite nightingale dr
+flamingo dr opposite dove st
+bedford hwy [inbound] in front of flamingo dr
+bedford hwy before sherbrooke dr
+fairview overpass before windsor st
+windsor st before almon st
+cunard st opposite hunter st
+inglis st [westbound] before tower rd
+beaverbank rd [inbound]after birch rd
+beaverbank rd opposite kinsac rd

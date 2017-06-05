@@ -1,0 +1,19 @@
+runfile('C:/Users/Yamuna/Desktop/Data Management/Query D Python Code.py', wdir='C:/Users/Yamuna/Desktop/Data Management')
+522 of hits for route_id 80
+522 of hits for route_id 80
+522 of hits for route_id 80
+412 of hits for route_id 51
+412 of hits for route_id 51
+412 of hits for route_id 51
+523 of hits for route_id 60
+990 of hits for route_id 1
+242 of hits for route_id 82
+523 of hits for route_id 60
+Max number of hits: 
+990
+Route with Max hits: 1
+Collecting stop ids
+Collecting top 3 busiest bus stop
+1 hits - Bus Stop names : willet st after chadwick pl
+1 hits - Bus Stop names : willet st after chadwick pl
+1 hits - Bus Stop names : dunbrack st after lacewood dr

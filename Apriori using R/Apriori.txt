@@ -1,0 +1,83 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 50 -T 0 -C 0.2 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     historical-senate-predictions copy-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    207
+Attributes:   6
+              state
+              year
+              candidate
+              forecast_prob
+              result
+              winflag
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.15 (31 instances)
+Minimum metric <confidence>: 0.2
+Number of cycles performed: 17
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 9
+
+Size of set of large itemsets L(2): 18
+
+Size of set of large itemsets L(3): 8
+
+Best rules found:
+
+ 1. winflag=0 104 ==> result=Lose 104    <conf:(1)> lift:(1.99) lev:(0.25) [51] conv:(51.75)
+ 2. result=Lose 104 ==> winflag=0 104    <conf:(1)> lift:(1.99) lev:(0.25) [51] conv:(51.75)
+ 3. winflag=1 103 ==> result=Win 103    <conf:(1)> lift:(2.01) lev:(0.25) [51] conv:(51.75)
+ 4. result=Win 103 ==> winflag=1 103    <conf:(1)> lift:(2.01) lev:(0.25) [51] conv:(51.75)
+ 5. forecast_prob=1 68 ==> result=Win 68    <conf:(1)> lift:(2.01) lev:(0.17) [34] conv:(34.16)
+ 6. forecast_prob=1 68 ==> winflag=1 68    <conf:(1)> lift:(2.01) lev:(0.17) [34] conv:(34.16)
+ 7. forecast_prob=1 winflag=1 68 ==> result=Win 68    <conf:(1)> lift:(2.01) lev:(0.17) [34] conv:(34.16)
+ 8. forecast_prob=1 result=Win 68 ==> winflag=1 68    <conf:(1)> lift:(2.01) lev:(0.17) [34] conv:(34.16)
+ 9. forecast_prob=1 68 ==> result=Win winflag=1 68    <conf:(1)> lift:(2.01) lev:(0.17) [34] conv:(34.16)
+10. forecast_prob=0 67 ==> result=Lose 67    <conf:(1)> lift:(1.99) lev:(0.16) [33] conv:(33.34)
+11. forecast_prob=0 67 ==> winflag=0 67    <conf:(1)> lift:(1.99) lev:(0.16) [33] conv:(33.34)
+12. forecast_prob=0 winflag=0 67 ==> result=Lose 67    <conf:(1)> lift:(1.99) lev:(0.16) [33] conv:(33.34)
+13. forecast_prob=0 result=Lose 67 ==> winflag=0 67    <conf:(1)> lift:(1.99) lev:(0.16) [33] conv:(33.34)
+14. forecast_prob=0 67 ==> result=Lose winflag=0 67    <conf:(1)> lift:(1.99) lev:(0.16) [33] conv:(33.34)
+15. year=2010 winflag=0 37 ==> result=Lose 37    <conf:(1)> lift:(1.99) lev:(0.09) [18] conv:(18.41)
+16. year=2010 result=Lose 37 ==> winflag=0 37    <conf:(1)> lift:(1.99) lev:(0.09) [18] conv:(18.41)
+17. year=2010 winflag=1 36 ==> result=Win 36    <conf:(1)> lift:(2.01) lev:(0.09) [18] conv:(18.09)
+18. year=2010 result=Win 36 ==> winflag=1 36    <conf:(1)> lift:(2.01) lev:(0.09) [18] conv:(18.09)
+19. year=2008 winflag=1 34 ==> result=Win 34    <conf:(1)> lift:(2.01) lev:(0.08) [17] conv:(17.08)
+20. year=2008 result=Win 34 ==> winflag=1 34    <conf:(1)> lift:(2.01) lev:(0.08) [17] conv:(17.08)
+21. year=2012 winflag=0 34 ==> result=Lose 34    <conf:(1)> lift:(1.99) lev:(0.08) [16] conv:(16.92)
+22. year=2012 result=Lose 34 ==> winflag=0 34    <conf:(1)> lift:(1.99) lev:(0.08) [16] conv:(16.92)
+23. year=2008 winflag=0 33 ==> result=Lose 33    <conf:(1)> lift:(1.99) lev:(0.08) [16] conv:(16.42)
+24. year=2008 result=Lose 33 ==> winflag=0 33    <conf:(1)> lift:(1.99) lev:(0.08) [16] conv:(16.42)
+25. year=2012 winflag=1 33 ==> result=Win 33    <conf:(1)> lift:(2.01) lev:(0.08) [16] conv:(16.58)
+26. year=2012 result=Win 33 ==> winflag=1 33    <conf:(1)> lift:(2.01) lev:(0.08) [16] conv:(16.58)
+27. result=Win 103 ==> forecast_prob=1 68    <conf:(0.66)> lift:(2.01) lev:(0.17) [34] conv:(1.92)
+28. winflag=1 103 ==> forecast_prob=1 68    <conf:(0.66)> lift:(2.01) lev:(0.17) [34] conv:(1.92)
+29. result=Win winflag=1 103 ==> forecast_prob=1 68    <conf:(0.66)> lift:(2.01) lev:(0.17) [34] conv:(1.92)
+30. winflag=1 103 ==> forecast_prob=1 result=Win 68    <conf:(0.66)> lift:(2.01) lev:(0.17) [34] conv:(1.92)
+31. result=Win 103 ==> forecast_prob=1 winflag=1 68    <conf:(0.66)> lift:(2.01) lev:(0.17) [34] conv:(1.92)
+32. result=Lose 104 ==> forecast_prob=0 67    <conf:(0.64)> lift:(1.99) lev:(0.16) [33] conv:(1.85)
+33. winflag=0 104 ==> forecast_prob=0 67    <conf:(0.64)> lift:(1.99) lev:(0.16) [33] conv:(1.85)
+34. result=Lose winflag=0 104 ==> forecast_prob=0 67    <conf:(0.64)> lift:(1.99) lev:(0.16) [33] conv:(1.85)
+35. winflag=0 104 ==> forecast_prob=0 result=Lose 67    <conf:(0.64)> lift:(1.99) lev:(0.16) [33] conv:(1.85)
+36. result=Lose 104 ==> forecast_prob=0 winflag=0 67    <conf:(0.64)> lift:(1.99) lev:(0.16) [33] conv:(1.85)
+37. year=2008 67 ==> result=Win 34    <conf:(0.51)> lift:(1.02) lev:(0) [0] conv:(0.99)
+38. year=2008 67 ==> winflag=1 34    <conf:(0.51)> lift:(1.02) lev:(0) [0] conv:(0.99)
+39. year=2012 67 ==> result=Lose 34    <conf:(0.51)> lift:(1.01) lev:(0) [0] conv:(0.98)
+40. year=2012 67 ==> winflag=0 34    <conf:(0.51)> lift:(1.01) lev:(0) [0] conv:(0.98)
+41. year=2008 67 ==> result=Win winflag=1 34    <conf:(0.51)> lift:(1.02) lev:(0) [0] conv:(0.99)
+42. year=2012 67 ==> result=Lose winflag=0 34    <conf:(0.51)> lift:(1.01) lev:(0) [0] conv:(0.98)
+43. year=2010 73 ==> result=Lose 37    <conf:(0.51)> lift:(1.01) lev:(0) [0] conv:(0.98)
+44. year=2010 73 ==> winflag=0 37    <conf:(0.51)> lift:(1.01) lev:(0) [0] conv:(0.98)
+45. year=2010 73 ==> result=Lose winflag=0 37    <conf:(0.51)> lift:(1.01) lev:(0) [0] conv:(0.98)
+46. year=2010 73 ==> result=Win 36    <conf:(0.49)> lift:(0.99) lev:(-0) [0] conv:(0.97)
+47. year=2010 73 ==> winflag=1 36    <conf:(0.49)> lift:(0.99) lev:(-0) [0] conv:(0.97)
+48. year=2010 73 ==> result=Win winflag=1 36    <conf:(0.49)> lift:(0.99) lev:(-0) [0] conv:(0.97)
+49. year=2008 67 ==> result=Lose 33    <conf:(0.49)> lift:(0.98) lev:(-0) [0] conv:(0.95)
+50. year=2008 67 ==> winflag=0 33    <conf:(0.49)> lift:(0.98) lev:(-0) [0] conv:(0.95)
+
